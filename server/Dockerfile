@@ -6,6 +6,4 @@ COPY yarn.lock ./
 RUN yarn
 COPY . .
 
-RUN yarn build
-
-CMD [ "node", "dist/main.js" ]
+CMD yarn start

@@ -87,6 +87,7 @@ export class CustomersService {
 
   async deleteOne(id: string): Promise<any> {
     console.log(`Delete customer #${id}`);
+    // TODO: remove customers together with all projects
     return this.customerModel.findByIdAndDelete(id).catch((e) => {
       throw new HttpException(
         {

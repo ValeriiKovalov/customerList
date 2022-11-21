@@ -6,6 +6,7 @@ import config from './config';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  // TODO: add logger
   console.log('Server listening on port:', config.port);
 
   await app.listen(config.port);
