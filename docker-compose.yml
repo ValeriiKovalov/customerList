@@ -10,6 +10,8 @@ services:
       PORT: 3001
     ports:
       - 3001:3001
+    depends_on:
+      - server
     networks:
       - internal
   server:
