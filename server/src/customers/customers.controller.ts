@@ -6,6 +6,7 @@ import {
   Delete,
   Body,
   Param,
+  Query,
 } from '@nestjs/common';
 import { CustomersService } from './customers.service';
 import {
@@ -24,8 +25,8 @@ export class CustomersController {
   }
 
   @Get()
-  findAll(): Promise<Customer[]> {
-    return this.customersService.findAll();
+  findAll(@Query('isActive') isActive?: boolean): Promise<Customer[]> {
+    return this.customersService.findAll(isActive);
   }
 
   @Get(':id')

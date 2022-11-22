@@ -1,0 +1,50 @@
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
+
+.form-wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+.App {
+  text-align: center;
+  margin-top: 30px;
+}
+nav {
+  width: auto;
+  margin: 0 auto 20px;
+  background: #4163c0;
+  height: 40px;
+  line-height: 40px;
+}
+nav ul li {
+  display: inline;
+  list-style-type: none;
+  text-align: center;
+  padding: 30px;
+}
+nav ul li a {
+  margin: 50px 0;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #888888;
+  text-decoration: none;
+}
+table {
+  margin-top: 50px;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.fill-db-button {
+  text-align: right;
+}

@@ -1,6 +1,17 @@
 version: '3.9'
 
 services:
+  front:
+    container_name: 'front'
+    build:
+      context: front/
+      dockerfile: Dockerfile
+    environment:
+      PORT: 3001
+    ports:
+      - 3001:3001
+    networks:
+      - internal
   server:
     container_name: 'server'
     build:

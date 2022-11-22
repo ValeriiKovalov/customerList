@@ -1,3 +1,5 @@
 .idea/
 dev/
 server/.env
+front/.env.local
+!/front/.env.local
